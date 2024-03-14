@@ -1,19 +1,36 @@
-plugins {
-    id 'java'
+buildscript {
+    ext {
+        springBootVersion = '3.2.1'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
 }
 
-group = 'com.b1uesoda'
-version = '1.0-SNAPSHOT'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+
+
+group = "MyWebService.example"
+version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.9.1')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
 
-test {
+
+tasks.test {
     useJUnitPlatform()
 }
