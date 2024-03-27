@@ -1,4 +1,10 @@
 # 스프링 부트와 AWS로 웹 서비스 구현해보기
+## ✔️개발환경
+IDE : IntelliJ IDEA Community
+Framework : Spring Boot 3.2.3
+Build : Gradle
+JDK : JDK 17
+
 ## ✔️요구사항
 ### 📍게시판 기능
 - 게시글 조회
