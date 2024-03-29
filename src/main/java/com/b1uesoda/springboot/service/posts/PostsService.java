@@ -1,5 +1,7 @@
 package com.b1uesoda.springboot.service.posts;
 
+import com.b1uesoda.springboot.domain.posts.PostsRepository;
+import com.b1uesoda.springboot.web.dto.PostsSaveRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
