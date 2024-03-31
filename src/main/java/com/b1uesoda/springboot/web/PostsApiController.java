@@ -1,6 +1,7 @@
 package com.b1uesoda.springboot.web;
 
 import com.b1uesoda.springboot.service.posts.PostsService;
+import com.b1uesoda.springboot.web.dto.PostsSaveRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
