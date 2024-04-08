@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 public class PostsService {
     private final PostsRepository postsRepository; // PostsRepository를 주입받음
 
+    @Transactional
     // 게시글 저장
     public Long save(PostsSaveRequestDto requestDto) {
         return postsRepository.save(requestDto.toEntity()).getId();
