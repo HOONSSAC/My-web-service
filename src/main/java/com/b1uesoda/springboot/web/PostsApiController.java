@@ -1,7 +1,9 @@
 package com.b1uesoda.springboot.web;
 
 import com.b1uesoda.springboot.service.posts.PostsService;
+import com.b1uesoda.springboot.web.dto.PostsResponseDto;
 import com.b1uesoda.springboot.web.dto.PostsSaveRequestDto;
+import com.b1uesoda.springboot.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
