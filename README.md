@@ -1,4 +1,4 @@
-# 스프링 부트와 AWS로 웹 서비스 구현해보기
+# 🖥️스프링 부트와 AWS로 웹 서비스 구현해보기
 ## ✔️개발환경
 #### IDE : IntelliJ IDEA Community
 #### Framework : Spring Boot 3.0.2
